@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<!--    <classes>
+      <class name="javapractices.C"/>
+      <class name="javapractices.ProblemStatement"/>
+      <class name="javapractices.B"/>
+      <class name="seleniumpractices.TestNgAnnotations2"/>
+      <class name="javapractices.StackOverflowError"/>
+      <class name="javapractices.A"/>
+      <class name="javapractices.Test"/>
+      <class name="seleniumpractices.TestNgGroups"/>
+      <class name="seleniumpractices.TestNgAnnotationExample"/>
+      <class name="javapractices.TypesOfVariables"/>
+      <class name="seleniumpractices.TestNgAnnotations"/>
+      <class name="javapractices.MultipleInheritanceAllowedViaInterface"/>
+      <class name="seleniumpractices.MyFirstTestNgTest"/>
+      <class name="javapractices.InterfaceExample"/>
+      <class name="javapractices.Variables"/>
+      <class name="seleniumpractices.HardAssertions"/>
+      <class name="javapractices.ImplClass"/>
+      <class name="javapractices.MyClass"/>
+      <class name="javapractices2.MyClass2"/>
+      <class name="seleniumpractices.SoftAssertInTestNg"/>
+      <class name="javapractices.MyFirstInterface"/>
+    </classes>-->
+		<packages>
+			<package name="seleniumpractices"></package>
+		</packages>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

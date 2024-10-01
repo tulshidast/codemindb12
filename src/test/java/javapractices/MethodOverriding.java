@@ -6,7 +6,6 @@ public class MethodOverriding {
 		Vehicle_1 vehicle_1 = new TwoWheelerVehicle_1();
 		vehicle_1.changeGear();
 	}
-
 }
 
 class Vehicle_1 {
