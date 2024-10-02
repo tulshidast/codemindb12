@@ -27,23 +27,23 @@ public class Utility {
 	static WebDriver driver;
 
 	private Utility() throws IOException {
-		if (driver == null) {
 
-			if (getProperty("browser").equalsIgnoreCase("chrome")) {
-				WebDriverManager.chromedriver().setup();
-				Utility.driver = new ChromeDriver();
-			} else if (getProperty("browser").equalsIgnoreCase("edge")) {
-				WebDriverManager.edgedriver().setup();
-				Utility.driver = new EdgeDriver();
-			} else if (getProperty("browser").equalsIgnoreCase("firefox")) {
-				WebDriverManager.firefoxdriver().setup();
-				Utility.driver = new FirefoxDriver();
-			}
+		if (getProperty("browser").equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		} else if (getProperty("browser").equalsIgnoreCase("edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		} else if (getProperty("browser").equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
 		}
 	}
 
 	public static WebDriver getDriver() throws IOException {
-		new Utility();
+		if (driver == null) {
+			new Utility();
+		}
 		return driver;
 	}
 
