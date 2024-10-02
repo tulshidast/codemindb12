@@ -11,7 +11,7 @@ public class VerifyValidLogin extends BaseTest {
 	HomePage homePage;
 	LoginSuccessPage loginSuccessPage;
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyValidLogin() {
 		homePage = new HomePage(driver);
 		loginSuccessPage = new LoginSuccessPage(driver);
